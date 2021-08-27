@@ -172,3 +172,10 @@ button:active {
   background: #e07a5f;
 }
 
+@media screen and (orientation: portrait) {
+  html {
+    background-color: #f4f1de;
+    overflow-y: visible;
+    overflow-x: hidden;
+  } 
+}

@@ -301,7 +301,7 @@ function generate() {
 
 
     };
-    if (type >= 47 && type <= 53) {
+    if (type >= 47 && type <= 56) {
         varname = getRandomInt(21);
         if (varname === 0) {
             varname = 'Майкл Джексон '
@@ -408,7 +408,7 @@ function generate() {
         document.getElementById('text').innerText = varname + action + subject;
 
     };
-    if (type >= 54 && type <= 59) {
+    if (type >= 57 && type <= 59) {
         varname = getRandomInt(5);
         if (varname === 0) {
             varname = 'Обернись.'
