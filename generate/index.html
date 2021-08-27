@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Это сатирический вебсайт для создания выдуманных и хаотичных заголовков новостей. Made by ytrav.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Создать | Not Neural News</title>
+</head>
+
+<body>
+
+    <div class="frame">
+        <div class="header">
+            <h1>Not Neural News</h1>
+        </div>
+        <div class="pushL"></div>
+        <div class="pushR"></div>
+        <div class="generator">
+            <div class="gen-pushL"></div>
+            <div class="gen-pushR"></div>
+            <div class="gen-textarea">
+                <div id="textarea">
+                    <p id="text">
+                        Тебе не стоило этого видеть.
+                    </p>
+                </div>
+            </div>
+            <div class="gen-button">
+                <button onclick="generate()">
+                    Придумать
+                </button>
+                <button id="copy" onclick="copy()">
+                    Скопировать
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Website is made by Anton 'ytrav' Shevchuk. 2020-2021 Lower Shelf
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>generate()</script>
+</body>
+
+</html>

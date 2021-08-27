@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f4f1de;
+}
+.frame {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.8fr 1.4fr 0.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pushL header pushR"
+    "pushL generator pushR"
+    "pushL footer pushR";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pushL {
+  grid-area: pushL;
+}
+
+.pushR {
+  grid-area: pushR;
+}
+
+.generator {
+  display: grid;
+  grid-template-columns: 0.3fr 2.4fr 0.3fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gen-pushL gen-textarea gen-pushR"
+    "gen-pushL gen-button gen-pushR";
+  grid-area: generator;
+}
+
+#textarea {
+  background-color: #f2cc8f;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.gen-pushL {
+  grid-area: gen-pushL;
+}
+
+.gen-pushR {
+  grid-area: gen-pushR;
+}
+
+.gen-textarea {
+  grid-area: gen-textarea;
+}
+
+.gen-button {
+  grid-area: gen-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: none;
+  padding: 0.5em;
+  border-radius: 40px;
+  background-color: #67a286;
+  color: white;
+  transition: background-color 0.1s;
+  margin: 10px;
+  min-width: fit-content;
+  width: 250px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#copy {
+  background-color: #81b29a00;
+  transition: background-color 0.1s;
+  color: #67a286;
+  border: 5px solid #67a286;
+}
+
+#copy:hover {
+  background-color: #558b712d;
+  cursor: pointer;
+}
+
+#copy:active {
+  background-color: #3e655263;
+}
+
+button:hover {
+  background-color: #558b71;
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+}
+
+button:active {
+  background-color: #3e6552;
+  color: rgb(231, 231, 231);
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#text::selection {
+  background: #e07a5f;
+}
+
+.footer p::selection{
+  background: rgb(171, 215, 230);
+  color: white;
+}
+.footer p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #adadad;
+}
+
