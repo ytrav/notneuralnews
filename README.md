@@ -1,3 +1,3 @@
 # notneuralnews
-Creating some fake news in Russian
+Creating some fake news in Russian >>>>
 DISClAIMER: REPO AUTHOR DOES NOT MOTIVATE KILLING PEOPLE AND OTHER STUFF ON THIS WEBSITE!
